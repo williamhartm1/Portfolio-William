@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--	<title>--><?php //bloginfo( 'name' ); ?><!--</title>-->
-	<?php wp_head(); ?>
-
-</head>
-<body>
+</div>
+<!-- <footer>
+	<div class="container">
+		<div class="copyrights text-center">
+			<? //php dynamic_sidebar( 'fw-1' ) ?>
+		</div>
+	</div>
+</footer> -->
 
 <header class="lg-sticky row main-menu">
     <div class="container">
@@ -22,8 +20,8 @@
                 <i class="fas fa-bars hamburger_bars"></i>
             </button>
             <div class="collapse navbar-collapse mr-auto w-100 justify-content-end" id="navbarSupportedContent">
-				<?php /* Primary navigation */
-				wp_nav_menu([
+			<? //php /* Primary navigation */
+				 wp_nav_menu([
 					            'menu'            => 'primary',
 					            'theme_location'  => 'top',
 					            'container'       => false,
@@ -36,17 +34,16 @@
 					            'walker'          => new bs4navwalker(),
 				            ]);
 				?>
-                <!-- <div class="d-md-none my-lg-0 searchform mobilesf">
+                <div class="d-md-none my-lg-0 searchform mobilesf">
 					<?php get_search_form(); ?>
-                </div> -->
+                </div> 
             </div>
         </nav>
 
     </div>
 </header>
-<div class="container-fluid">
-    <div class="row">
-        <div class="mainImg">
-            <img src="<?= get_template_directory_uri() . '/images/HEADER.jpg'; ?>" alt="Header image">
-        </div>
-    </div>
+
+<?php wp_footer(); ?>
+
+</body>
+</html>
