@@ -1,0 +1,92 @@
+/* colors */
+/* colors */
+/*--- media queries ---*/
+@media (max-width: 1100px) {
+  .searchform {
+    right: 5px;
+  }
+}
+@media (max-width: 1067px) {
+  .main-nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .main-menu {
+    height: 70px;
+    background: -moz-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #282828), color-stop(50%, #282828), color-stop(51%, #6e9e63), color-stop(100%, #6e9e63));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%);
+    /* ie10+ */
+    background: linear-gradient(315deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282828', endColorstr='#6e9e63', GradientType=1);
+    /* ie6-9 */
+  }
+  .main-menu nav li a {
+    font-size: 1.1rem;
+  }
+  .nav-link {
+    display: inline;
+    padding: 19px 0;
+  }
+}
+/* col-xs*/
+@media (max-width: 768px) {
+  .searchform {
+    position: relative;
+  }
+}
+@media (max-width: 767.5px) {
+  .main-menu .navbar-nav .nav-link {
+    margin-top: 10px;
+    padding-left: .9rem !important;
+    padding-right: .9rem !important;
+  }
+  .main-menu .navbar-brand > img {
+    max-height: 100px;
+    padding: 15px 15px 15px 0px;
+  }
+  .dropdown-menu {
+    margin: .125rem 15px 0;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid rgba(110, 158, 99, 0.25);
+    border-bottom: none;
+    border-radius: 0;
+  }
+}
+@media (max-width: 600px) {
+  .post .post-thumbnail {
+    position: relative;
+  }
+  .site-header .top-search {
+    float: none;
+  }
+  header.site-header .top-search {
+    float: none;
+  }
+}
+@media (max-width: 440px) {
+  #logoHead {
+    max-width: 300px !important;
+  }
+  .main-menu .navbar-brand > img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+@media (max-width: 580px) {
+  #logoHead {
+    max-width: 180px !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
