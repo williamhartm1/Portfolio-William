@@ -9,20 +9,12 @@
 
 <footer class="lg-sticky row main-menu">
     <div class="container">
-<<<<<<< HEAD
         <nav class="navbar navbar-expand-md navbar-fixed-bottom">
-=======
-        <nav class="navbar navbar-expand-md">
->>>>>>> William
             <!-- <a class="navbar-brand" href="<? //php echo home_url(); ?>">
                 <img class="logo-img" src="<? //= get_template_directory_uri() . '/images/LOGO-POM-WIT.png'; ?>"
                      alt="logo"/>
             </a> -->
-<<<<<<< HEAD
             <button class="navbar-toggler dropup" type="button" data-toggle="collapse"
-=======
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
->>>>>>> William
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars hamburger_bars dropup"></i>
