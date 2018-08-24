@@ -26,7 +26,11 @@ body {
   /* Margin bottom by footer height */
   height: 100%;
   font-family: "Dosis", sans-serif;
+<<<<<<< HEAD
   color: #FFFFFF;
+=======
+  color: #000000;
+>>>>>>> William
   text-decoration: none;
   background-color: #2b2b2b;
 }
