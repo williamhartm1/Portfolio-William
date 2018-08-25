@@ -35,6 +35,8 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 60px;
+  /* Set the fixed height of the footer here */
   line-height: 60px;
   /* Vertically center the text there */
   color: #FFFFFF;
@@ -105,6 +107,14 @@ h4 a,
 h5 a,
 h6 a {
   font-family: "Raleway", sans-serif;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: #FFFFFF;
 }
 h3 {
   font-family: "Dosis", sans-serif;
@@ -248,10 +258,10 @@ a:focus {
   margin-top: 20px;
 }
 .main-menu .navbar-nav .nav-link {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   margin-left: .9rem !important;
   margin-right: .9rem !important;
+  margin-top: 0 !important;
 }
 nav li a {
   font-family: "Raleway", sans-serif;
