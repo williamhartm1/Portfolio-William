@@ -7,10 +7,10 @@
 <?php get_header(); ?>
 
     <div class="row">
-        <div class="container">
+        <div class="container container-work">
             <div class="posts">
                 <div class="row projecten-row">
-                    <div class="col-sm-12 col-md-8">
+                    <div class="col-sm-12 col-md-6">
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                             <div class="post project-post">
                                 <h1><?php the_title(); ?></h1>
@@ -22,13 +22,13 @@
 						endif;
 						?>
                     </div>
-                    <div class="col">
+                    <div class="col no-padding">
 						<?php
-						$post_counter = 0;
+						$post_counter = 1;
 						$first_post   = true;
 						global $post;
 						$args      = array(
-							'category_name'  => 'Projecten',
+							'category_name'  => 'work',
 							'order'          => 'DESC',
 							'orderby'        => 'date',
 							'posts_per_page' => -1,
@@ -43,7 +43,7 @@
 							<?php if(has_post_thumbnail()): ?>
                                 <div class="project-img">
                                     <a href="<?= get_post_permalink(); ?>">
-                                        <img src="<?= the_post_thumbnail_url(); ?>" alt="Project foto">
+                                        <img src="<?= the_post_thumbnail_url(); ?>" alt="work image">
                                     </a>
                                 </div>
 							<?php endif; ?>
@@ -51,11 +51,11 @@
 						<?php $first_post = false; ?>
                     </div>
 					<?php else: ?>
-                        <div class="col-12 col-sm-4 align-self-center">
+                        <div class="col-12 col-sm-3 align-self-center no-padding">
 							<?php if(has_post_thumbnail()): ?>
                                 <div class="project-img">
                                     <a href="<?= get_post_permalink(); ?>">
-                                        <img src="<?= the_post_thumbnail_url(); ?>" alt="Project foto">
+                                        <img src="<?= the_post_thumbnail_url(); ?>" alt="work image">
                                     </a>
                                 </div>
 							<?php endif; ?>
@@ -63,7 +63,7 @@
 						<?php
 						$post_counter++;
 					endif;
-					if($post_counter % 3 == 0 && ($post_counter < (count($postslist) - 1))) {
+					if($post_counter % 4 == 0 && ($post_counter < (count($postslist) - 1))) {
 						echo "</div>";
 						echo "<div class='row projecten-row'>";
 					}
