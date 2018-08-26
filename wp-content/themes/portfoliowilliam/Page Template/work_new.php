@@ -9,8 +9,8 @@
     <div class="row">
         <div class="container container-work">
             <div class="posts">
-                <div class="row projecten-row">
-                    <div class="col-sm-12 col-md-6 no-padding">
+                <div class="row projecten-row align-items-end">
+                    <div class="col-sm-6 col-md-6 no-padding">
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <div class="post project-post">
                                 <h1><?php the_title(); ?></h1>
@@ -35,9 +35,8 @@
                     );
                     $postslist = get_posts($args);
 
-                    //for ($i = 0; $i <= count($postslist); $i++):
-                    //$post = $postslist[$i];
-                    foreach ($postslist as $post):
+                    for ($i = 0; $i <= 1; $i++):
+                        $post = $postslist[$i];
                         setup_postdata($post);
                         ?>
                         <div class="col-12 col-sm-3 no-padding">
@@ -52,7 +51,28 @@
                             </div>
                         </div>
                     <?php
-                    endforeach;
+                    endfor;
+
+                    echo '</div>';
+                    echo '<div class="row projecten-row">';
+
+                    for ($i = 2; $i <= count($postslist); $i++):
+                        $post = $postslist[$i];
+                        setup_postdata($post);
+                        ?>
+                        <div class="col-12 col-sm-3 no-padding">
+                            <div class="align-self-center">
+                                <?php if (has_post_thumbnail()): ?>
+                                    <div class="project-img">
+                                        <a href="<?= get_post_permalink(); ?>">
+                                            <img src="<?= the_post_thumbnail_url(); ?>" alt="work image">
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php
+                    endfor;
                     wp_reset_postdata();
                     ?>
                 </div>

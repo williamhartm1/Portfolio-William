@@ -28,17 +28,29 @@ html {
 	text-decoration: none;
 	background-color: @bg_color;
 	color: @text_color;
-	overflow-x: hidden;
-	overflow-y: hidden;
+	//overflow-x: hidden;
+	//overflow-y: hidden;
+
+	// no scrollbar
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 body {
 	margin-bottom: @footer_height; /* Margin bottom by footer height */
-	height: 100%;
+	//height: 100%;
 	font-family: @text_font;
 	color: @text_color;
 	text-decoration: none;
 	background-color: @bg_color;
+
+	// no scrollbar
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	padding-right: 20px; /* Increase/decrease this value for cross-browser compatibility */
+	box-sizing: content-box; /* So the width will be 100% + 17px */
 }
 
 /*--- footer ---*/
@@ -296,13 +308,13 @@ a {
 			margin: 0 -1px;
 			margin-top: 20px;
 		}
-	.nav-link {
-		// padding-left: 0;
-		// padding-right: 0;
-		padding: 0;
-		margin-left: .9rem !important;
-		margin-right: .9rem !important;
-		margin-top: 0 !important;
+		.nav-link {
+			// padding-left: 0;
+			// padding-right: 0;
+			padding: 0;
+			margin-left: .9rem !important;
+			margin-right: .9rem !important;
+			margin-top: 0 !important;
 		}
 	}
 }
@@ -553,7 +565,7 @@ img {
 		// greyscale
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 		filter: grayscale(100%);
-		
+
 		&:hover {
 			// scale/zoom
 			-moz-transform: scale(1.1);
@@ -563,7 +575,7 @@ img {
 			opacity: 1;
 			// greyscale
 			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    		filter: grayscale(0%);
+			filter: grayscale(0%);
 		}
 	}
 }
@@ -749,39 +761,91 @@ ul.bullet-list li p {
 }
 
 // video background
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+* {
+	box-sizing: border-box;
 }
+
+.video-background {
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -99;
+}
+
 .video-foreground,
 .video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }
+
 #vidtop-content {
 	top: 0;
 	color: #fff;
 }
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+
+.vid-info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33%;
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	padding: 1rem;
+	font-family: Avenir, Helvetica, sans-serif;
+}
+
+.vid-info h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 0;
+	line-height: 1.2;
+}
+
+.vid-info a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.5);
+	transition: .6s background;
+	border-bottom: none;
+	margin: 1rem auto;
+	text-align: center;
+}
+
 @media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+	.video-foreground {
+		height: 300%;
+		top: -100%;
+	}
 }
+
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+	.video-foreground {
+		width: 300%;
+		left: -100%;
+	}
 }
+
 @media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
+	.vid-info {
+		width: 50%;
+		padding: .5rem;
+	}
+
+	.vid-info h1 {
+		margin-bottom: .2rem;
+	}
 }
+
 @media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
+	.vid-info .acronym {
+		display: none;
+	}
 }
