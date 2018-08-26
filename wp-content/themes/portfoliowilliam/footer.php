@@ -20,7 +20,7 @@
                 <i class="fas fa-bars hamburger_bars dropup"></i>
             </button>
             <div class="collapse navbar-collapse mr-auto w-100 justify-content-end" id="navbarSupportedContent">
-			<? //php /* Primary navigation */
+			<?php /* Primary navigation */
 				 wp_nav_menu([
 					            'menu'            => 'primary',
 					            'theme_location'  => 'top',
@@ -46,19 +46,5 @@
 <?php wp_footer(); ?>
 
 </body>
-<script>
-        function showAndHide(col) {
-            let x = document.getElementsByClassName("sub" + col);
-            let i;
-            for (i = 0; i < x.length; i++) {
-                let element = x[i];
-                if (element.style.display === "none") {
-                    element.style.display = null;
-                }
-                else {
-                    element.style.display = "none";
-                }
-            }
-        }
-</script>
+
 </html>
