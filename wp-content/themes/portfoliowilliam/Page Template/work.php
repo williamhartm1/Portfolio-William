@@ -29,7 +29,7 @@
 						global $post;
 						$args      = array(
 							'category_name'  => 'work',
-							'order'          => 'DESC',
+							'order'          => 'name',
 							'orderby'        => 'date',
 							'posts_per_page' => -1,
 						);
