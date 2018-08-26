@@ -738,7 +738,7 @@ ul.bullet-list li p {
 }
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    background: url('/Applications/XAMPP/xamppfiles/htdocs/William/wp-content/themes/portfoliowilliam/video/eigenzinnig-web.jpg') center center / cover no-repeat;
   }
 }
 /*# sourceMappingURL=./style.css.map */
