@@ -46,19 +46,5 @@
 <?php wp_footer(); ?>
 
 </body>
-<script>
-        function showAndHide(col) {
-            let x = document.getElementsByClassName("sub" + col);
-            let i;
-            for (i = 0; i < x.length; i++) {
-                let element = x[i];
-                if (element.style.display === "none") {
-                    element.style.display = null;
-                }
-                else {
-                    element.style.display = "none";
-                }
-            }
-        }
-</script>
+
 </html>
