@@ -128,6 +128,21 @@ h4 span,
 h5 span,
 h6 span {
   color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 6vw;
+  font-weight: 800;
+  text-decoration: none;
+}
+h2 a {
+  font-family: "Raleway", sans-serif;
+}
+h2 span {
+  color: #92fd91;
+  font-family: "Raleway", sans-serif;
 }
 h3 {
   font-family: "Dosis", sans-serif;
@@ -136,6 +151,14 @@ h3 {
 }
 h4 {
   font-size: 1.6rem;
+}
+.sub-title {
+  font-size: 3vw !important;
+}
+.fa-square {
+  color: #92fd91;
+  padding-left: 5px;
+  font-size: 22px !important;
 }
 a {
   text-decoration: none;
@@ -427,12 +450,17 @@ img {
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 1.2rem;
+  font-weight: 200;
 }
 .post:last-of-type {
   border: none;
 }
 .post .tags {
   margin-bottom: 10px;
+}
+.post b {
+  font-weight: 600;
 }
 .post-thumbnail {
   top: 0;
@@ -457,6 +485,9 @@ img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.rating {
+  padding: 10px;
 }
 /*--- projecten [in post] ---*/
 .projecten-row:last-of-type {
@@ -649,6 +680,10 @@ ul.bullet-list li p {
   color: #000000;
   padding: 2px 4px !important;
   margin-bottom: 0 !important;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
 .fullscreen-bg {
   position: fixed;

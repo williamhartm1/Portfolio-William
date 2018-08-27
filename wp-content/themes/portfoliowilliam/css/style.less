@@ -140,6 +140,22 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	span {
 		color: @white;
+		font-family: "Raleway", sans-serif;
+	}
+}
+
+h2 {
+	color: @white;
+	font-family: @title_font;
+	font-size: 6vw;
+	font-weight: 800;
+	text-decoration: none;
+	a {
+		font-family: @title_font;
+	}
+	span {
+		color: @primary_color;
+		font-family: "Raleway", sans-serif;
 	}
 }
 
@@ -152,6 +168,16 @@ h3 {
 
 h4 {
 	font-size: 1.6rem;
+}
+
+.sub-title {
+	font-size: 3vw !important;
+}
+
+.fa-square {
+	color: @primary_color;
+	padding-left: 5px;
+	font-size: 22px !important;
 }
 
 a {
@@ -501,11 +527,16 @@ img {
 	// background-color: @white;
 	padding-left: 30px;
 	padding-right: 30px;
+	font-size: 1.2rem;
+	font-weight: 200;
 	&:last-of-type {
 		border: none;
 	}
 	.tags {
 		margin-bottom: 10px;
+	}
+	b {
+		font-weight: 600;
 	}
 }
 
@@ -538,6 +569,11 @@ img {
 		}
 	}
 }
+
+// ul-list
+	.rating {
+		padding: 10px;
+	}
 
 /*--- projecten [in post] ---*/
 .projecten-row {
@@ -769,6 +805,11 @@ ul.bullet-list li p {
 	color: #000000;
 	padding: 2px 4px !important;
 	margin-bottom: 0 !important;
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
 }
 
 // video background
