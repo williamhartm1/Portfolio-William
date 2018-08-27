@@ -1,65 +1,7 @@
 /*--- font import ---*/
+@import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Raleway:400,500,800";
 @import "bootstrap.min.css";
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Dosis ExtraLight'), local('Dosis-ExtraLight'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGnKuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHDKeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_A.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Dosis Medium'), local('Dosis-Medium'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGbKOCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzG3L-CFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHTLuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHPLeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBQ.ttf) format('truetype');
-}
 /* fonts */
 /* colors */
 * {
@@ -379,20 +321,31 @@ ul.sub-menu {
 .btn {
   display: inline-block;
   padding: 10px;
-  border-radius: 15px;
+  background-color: transparent !important;
   border: 1px solid #92fd91 !important;
-  color: #2b2b2b;
-  margin-bottom: 15px;
-  font-size: 1em;
+  color: #FFFFFF;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 1vw;
   float: right;
+  border-radius: 0px !important;
 }
 .btn:hover {
   -webkit-transition: all 750ms;
   -moz-transition: all 750ms;
   -o-transition: all 750ms;
   transition: all 750ms;
-  background-color: #2b2b2b;
-  border: 1px solid #2b2b2b !important;
+  color: #FFFFFF;
+  background-color: #92fd91 !important;
+  border: 1px solid #92fd91 !important;
+}
+.btn.active {
+  color: #FFFFFF;
+  background-color: #92fd91 !important;
+  border: 1px solid #92fd91 !important;
+}
+.btn-danger {
+  background-color: transparent !important;
 }
 .btn.back-btn {
   color: #2b2b2b;
@@ -748,13 +701,13 @@ ul.bullet-list li p {
   margin: 1rem auto;
   text-align: center;
 }
-@media (min-aspect-ratio: 1.77777778) {
+@media (min-aspect-ratio: 16/9) {
   .video-foreground {
     height: 300%;
     top: -100%;
   }
 }
-@media (max-aspect-ratio: 1.77777778) {
+@media (max-aspect-ratio: 16/9) {
   .video-foreground {
     width: 300%;
     left: -100%;
@@ -774,4 +727,4 @@ ul.bullet-list li p {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=./style.css.map */
