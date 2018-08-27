@@ -744,19 +744,6 @@ ul.bullet-list li p {
 /**
 * Demo Stuff
 */
-body {
-  background: #1BBC9B;
-  font-family: 'Montserrat', sans-serif;
-}
-.container {
-  text-align: center;
-}
-h1 {
-  color: #117964;
-  font-weight: 400;
-  font-size: 2em;
-  margin: 1em 0;
-}
 /**
 * iPhone
 * Credits: Flat, Scaleable CSS iPhone Illustration by Tom Hergenreter
