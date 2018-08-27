@@ -26,7 +26,7 @@
 </div> -->
 
 <div class="fullscreen-bg">
-    <video loop muted autoplay poster="video/eigenzinnig-web.jpg" class="fullscreen-bg__video">
+    <video loop muted autoplay poster="<?=get_template_directory_uri() . '/video/eigenzinnig-web.jpg'?>" class="fullscreen-bg__video">
         <!-- <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm">
         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg"> -->
