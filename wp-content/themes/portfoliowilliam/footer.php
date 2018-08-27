@@ -20,7 +20,7 @@
                 <i class="fas fa-bars hamburger_bars dropup"></i>
             </button>
             <div class="collapse navbar-collapse mr-auto w-100 justify-content-end" id="navbarSupportedContent">
-			<? //php /* Primary navigation */
+			<?php /* Primary navigation */
 				 wp_nav_menu([
 					            'menu'            => 'primary',
 					            'theme_location'  => 'top',
