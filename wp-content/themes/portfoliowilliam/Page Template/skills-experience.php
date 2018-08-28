@@ -10,7 +10,7 @@
         <div class="container container-work">
             <div class="posts">
                 <div class="row">
-                    <div class="col-sm-12 col-md-8">
+                    <div class="col-sm-12 col-md-8 no-padding">
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                             <div class="post project-post">
                                 <h1><?php the_title(); ?></h1>
@@ -37,11 +37,11 @@
 					foreach($postslist as $post):
 						setup_postdata($post);
 						?>
-						<div class="col-12 col-sm-6">
+						<div class="col-12 col-sm-6 no-padding">
 							<div class="post">
 								<div class="row">
 									<div class="col">
-										<h2 class="sub-title"><?php the_title(); ?></h1>
+										<h2 class="sub-title"><?php the_title(); ?></h2>
 									</div>
 								</div>
 								<div class="row">
@@ -50,10 +50,10 @@
 									</div>
 								</div>
 							</div>
-					<?php
-					endforeach;
-					wp_reset_postdata();
-					?>
+						<?php
+						endforeach;
+						wp_reset_postdata();
+						?>
 				</div>
             </div>
         </div>
