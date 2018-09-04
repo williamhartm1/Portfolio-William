@@ -117,6 +117,11 @@ button {
 	}
 }
 
+button.close {
+		color: white !important;
+		font-size: 8vw;
+}
+
 /*--- primary-bg ---*/
 .primary-bg {
 	background-color: @primary_color;
@@ -190,11 +195,11 @@ h4 {
 }
 
 a {
-	text-decoration: none;
-	color: @inherit;
+	text-decoration: underline;
+	color: @primary_color;
 	&:hover {
 		outline: none;
-		color: @inherit;
+		color: @white;
 	}
 	&:focus {
 		outline: none;
@@ -361,6 +366,7 @@ nav {
 		font-weight: 800;
 		font-size: 2vw !important;
 		color: @white;
+		cursor: pointer;
 		&.active {
 			font-weight: 800;
 			color: @white;
@@ -373,6 +379,10 @@ nav {
 			color: @white;
 		}
 	}
+}
+
+a.li-modal {
+	text-align: center;
 }
 
 .dropdown-item {
@@ -1404,4 +1414,19 @@ li {
     transform:rotate(135deg);
   }
 
+}
+
+
+// modal
+.modal-dialog {
+	width: 50%;
+	max-width: 50%;
+}
+
+.modal-content {
+	background-color: @secondary_color;
+}
+
+.blur {
+	-webkit-filter: blur(5px) grayscale(50%);
 }

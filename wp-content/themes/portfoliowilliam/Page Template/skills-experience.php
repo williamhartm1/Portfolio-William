@@ -50,6 +50,7 @@
 									</div>
 								</div>
 							</div>
+						</div>
 						<?php
 						endforeach;
 						wp_reset_postdata();
