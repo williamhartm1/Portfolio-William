@@ -36,6 +36,9 @@ function theme_register_js()
     // Bootstrap
     wp_register_script('jquery_bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
     wp_enqueue_script('jquery_bootstrap');
+
+    // menu modal + effects
+    wp_enqueue_script('menu-modal', get_template_directory_uri() .'/js/menu-modal.js', array('jquery'), null, true);
 }
 
 function theme_register_css()

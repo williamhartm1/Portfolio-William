@@ -29,8 +29,8 @@
                     global $post;
                     $args = array(
                         'category_name'  => 'work',
-                        'order'          => 'name',
-                        'orderby'        => 'date',
+                        //'order'          => 'name',
+                        'orderby'        => 'rand',
                         'posts_per_page' => -1,
                     );
                     $postslist = get_posts($args);
