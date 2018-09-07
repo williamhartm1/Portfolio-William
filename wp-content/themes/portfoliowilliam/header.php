@@ -9,3 +9,31 @@
 <body>
 
 <div class="container-fluid no-padding">
+
+    <div class="iphone style-6">
+        <div class="iphone__item">#6</div>
+        <div class="iphone__power-btn"></div>
+        <div class="iphone__left-btn"></div>
+        <div class="iphone__details"></div>
+        <div class="iphone__screen">
+            <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="iphone__content"></div>
+        </div>
+        <div class="iphone__home-btn"></div>
+    </div>
+    
+    <script>
+        $('.nav__trigger').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().toggleClass('nav--active');
+        });
+    </script>

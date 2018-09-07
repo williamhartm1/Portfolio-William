@@ -30,7 +30,7 @@ html {
 	color: @text_color;
 	//overflow-x: hidden;
 	//overflow-y: hidden;
-
+	
 	// no scrollbar
 	height: 100%;
 	width: 100%;
@@ -44,14 +44,14 @@ body {
 	color: @text_color;
 	text-decoration: none;
 	background-color: @bg_color;
-
+	
 	// no scrollbar
 	width: 100%;
 	height: 100%;
 	overflow-y: scroll;
 	padding-right: 20px; /* Increase/decrease this value for cross-browser compatibility */
 	box-sizing: content-box; /* So the width will be 100% + 17px */
-
+	
 	background-image: url("https://william-hartman.nl/CIRCLES.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;
@@ -118,8 +118,8 @@ button {
 }
 
 button.close {
-		color: white !important;
-		font-size: 8vw;
+	color: white !important;
+	font-size: 8vw;
 }
 
 /*--- primary-bg ---*/
@@ -189,9 +189,9 @@ h4 {
 	margin-left: 20px;
 	font-size: 22px !important;
 	box-shadow: 2px 2px 5px @secondary_color;
-		&:first-child {
-			margin-left: 5px;
-		}
+	&:first-child {
+		margin-left: 5px;
+	}
 }
 
 a {
@@ -581,7 +581,7 @@ img {
 		margin-right: 15px;
 		img {
 			max-width: 100%;
-
+			
 			-moz-transition: all 0.3s;
 			-webkit-transition: all 0.3s;
 			transition: all 0.3s;
@@ -595,9 +595,9 @@ img {
 }
 
 // ul-list
-	.rating {
-		padding: 10px;
-	}
+.rating {
+	padding: 10px;
+}
 
 /*--- projecten [in post] ---*/
 .projecten-row {
@@ -637,7 +637,7 @@ img {
 		// greyscale
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 		filter: grayscale(100%);
-
+		
 		&:hover {
 			// scale/zoom
 			-moz-transform: scale(1.1);
@@ -769,7 +769,7 @@ img {
 			border-color: @primary_color !important;
 		}
 	}
-
+	
 	input, textarea {
 		border: solid @primary_color 1px;
 		border-radius: 10px;
@@ -839,42 +839,42 @@ li {
 
 // video background
 .fullscreen-bg {
-    // position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+	// position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @media (min-aspect-ratio: 16/9) {
 	.fullscreen-bg__video {
-	  height: 300%;
-	  top: -100%;
+		height: 300%;
+		top: -100%;
 	}
-  }
-  
-  @media (max-aspect-ratio: 16/9) {
-	.fullscreen-bg__video {
-	  width: 300%;
-	  left: -100%;
-	}
-  }
+}
 
-  @media (max-width: 767px) {
-	.fullscreen-bg {
-	  background: url('/Applications/XAMPP/xamppfiles/htdocs/William/wp-content/themes/portfoliowilliam/video/eigenzinnig-web.jpg') center center / cover no-repeat;
+@media (max-aspect-ratio: 16/9) {
+	.fullscreen-bg__video {
+		width: 300%;
+		left: -100%;
 	}
-  }
+}
+
+@media (max-width: 767px) {
+	.fullscreen-bg {
+		background: url('../video/eigenzinnig-web.jpg') center center / cover no-repeat;
+	}
+}
 
 // * { box-sizing: border-box; }
 // .video-background {
@@ -914,151 +914,124 @@ li {
 // }
 
 // fancy mobile menu
-@main-bg:        #1BBC9B;
-@nav-color:      #FFFFFF;
-@nav-bg-active:  #333;
-@screen-bg:      #D2527F;
-@duration:       300ms;
-@ease:           ease-in-out;
-
-/**
-* Demo Stuff
-*/
-
-//body {
-//  background: @main-bg;
-//  font-family: 'Montserrat', sans-serif;
-//}
-//
-//.container {
-//  text-align: center;
-//}
-
-//h1 {
-//  color: darken(@main-bg, 15%);
-//  font-weight:400;
-//  font-size:2em;
-//  margin:1em 0;
-//}
-
-
-/**
-* iPhone
-* Credits: Flat, Scaleable CSS iPhone Illustration by Tom Hergenreter
-* https://codepen.io/TomHergenreter/details/qDywF/
-*/
+@main-bg: #1BBC9B;
+@nav-color: #FFFFFF;
+@nav-bg-active: #333;
+@screen-bg: #D2527F;
+@duration: 300ms;
+@ease: ease-in-out;
 
 .iphone {
-  width: 16.06em;
-  height: 30.6em;
-  border-radius: 1.875em;
-  margin: 2em;
-  position: relative;
-  display:inline-block;
-  background: #fff;
+	width: 16.06em;
+	height: 30.6em;
+	border-radius: 1.875em;
+	margin: 2em;
+	position: relative;
+	display:inline-block;
+	background: #fff;
 }
 
 .iphone__item {
-  width: 16.06em;
-  height:1em;
-  position: absolute;
-  bottom:-2em;
-  color: darken(@main-bg, 10%);
-  text-align: center;
+	width: 16.06em;
+	height:1em;
+	position: absolute;
+	bottom:-2em;
+	color: darken(@main-bg, 10%);
+	text-align: center;
 }
 
 .iphone__power-btn{
-  width: 2.188em;
-  height: .188em;
-  background: #e0e0e0;
-  position: absolute;
-  right: 2.5em;
-  top: -.188em;
+	width: 2.188em;
+	height: .188em;
+	background: #e0e0e0;
+	position: absolute;
+	right: 2.5em;
+	top: -.188em;
 }
 
 .iphone__left-btn {
-  width: .188em;
-  height: 1.250em;
-  top: 3.250em;
-  left: -.188em;
-  position: absolute;
-  background: #e0e0e0;
-  
-  &:before {
-    content: '';
-    width: .188em;
-    height: .875em;
-    position: absolute;
-    top: 3em;
-    background: #e0e0e0;
-  }
-  
-  &:after {
-    content: '';
-    width: .188em;
-    height: .875em;
-    position: absolute;
-    top: 5.5em;
-    background: #e0e0e0;
-  }
+	width: .188em;
+	height: 1.250em;
+	top: 3.250em;
+	left: -.188em;
+	position: absolute;
+	background: #e0e0e0;
+	
+	&:before {
+		content: '';
+		width: .188em;
+		height: .875em;
+		position: absolute;
+		top: 3em;
+		background: #e0e0e0;
+	}
+	
+	&:after {
+		content: '';
+		width: .188em;
+		height: .875em;
+		position: absolute;
+		top: 5.5em;
+		background: #e0e0e0;
+	}
 }
 
 .iphone__details {
-  width: .438em;
-  height: .438em;
-  border-radius: 100%;
-  position: relative;
-  top: 1.313em;
-  left: 8em;
-  background: #7c7c7c;
-  
-  &:before {
-    content: '';
-    width: 2.5em;
-    height: .25em;
-    border-radius: .25em;
-    position: absolute;
-    top: 1em;
-    left: -1em;
-    background: #7c7c7c;
-  }
+	width: .438em;
+	height: .438em;
+	border-radius: 100%;
+	position: relative;
+	top: 1.313em;
+	left: 8em;
+	background: #7c7c7c;
+	
+	&:before {
+		content: '';
+		width: 2.5em;
+		height: .25em;
+		border-radius: .25em;
+		position: absolute;
+		top: 1em;
+		left: -1em;
+		background: #7c7c7c;
+	}
 }
 
 .iphone__home-btn {
-  width: 2.25em;
-  height: 2.25em;
-  border-radius: 100%;
-  position: absolute;
-  bottom: 1em;
-  right: 6.75em;
-  background: #f7f7f7;
-  
-  &:before {
-    content: '';
-    width: .813em;
-    height: .813em;
-    border: .15em solid #a8a8a8;
-    border-radius: .2em;
-    position: absolute;
-    top: .6em;
-    left: .57em;
-  }
+	width: 2.25em;
+	height: 2.25em;
+	border-radius: 100%;
+	position: absolute;
+	bottom: 1em;
+	right: 6.75em;
+	background: #f7f7f7;
+	
+	&:before {
+		content: '';
+		width: .813em;
+		height: .813em;
+		border: .15em solid #a8a8a8;
+		border-radius: .2em;
+		position: absolute;
+		top: .6em;
+		left: .57em;
+	}
 }
 
 .iphone__screen {
-  width: 14.5em;
-  height: 22.938em;
-  position: absolute;
-  top: 3.75em;
-  left: .750em;
-  overflow: hidden;
+	width: 14.5em;
+	height: 22.938em;
+	position: absolute;
+	top: 3.75em;
+	left: .750em;
+	overflow: hidden;
 }
 
 .iphone__content {
-  position: relative;
-  background-color: @screen-bg;
-  width:100%;
-  height:100%; 
+	position: relative;
+	background-color: @screen-bg;
+	width:100%;
+	height:100%;
 }
 
 /**
@@ -1066,309 +1039,84 @@ li {
 */
 
 .nav {
-  position: absolute;
-  z-index:100;  
-  opacity:0;
-  transition-property: all;
-  transition-duration: @duration;
+	position: absolute;
+	z-index:100;
+	opacity:0;
+	transition-property: all;
+	transition-duration: @duration;
 }
 
 .nav--active .nav {
-  opacity:1;
-  background-color: @nav-bg-active;
+	opacity:1;
+	background-color: @nav-bg-active;
 }
 
 .nav__list {
-  margin:0;
-  padding:10px;
+	margin:0;
+	padding:10px;
 }
 
 .nav__item {
-  list-style-type: none;
-  text-align: left;
+	list-style-type: none;
+	text-align: left;
 }
 
 .nav__link {
-  font-size:1.3em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: @nav-color;
-  opacity:1;
-  transition: opacity 300ms @ease;
+	font-size:1.3em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: @nav-color;
+	opacity:1;
+	transition: opacity 300ms @ease;
 }
 
 /* Default navigation icon */
 .nav__trigger {
-  display:block;
-  position:absolute;
-  width:30px;
-  height:25px;
-  right:10px;
-  top:10px;
-  z-index:200; 
+	display:block;
+	position:absolute;
+	width:30px;
+	height:25px;
+	right:10px;
+	top:10px;
+	z-index:200;
 }
 
 .nav--active .nav__trigger {
-  opacity:0.5;
+	opacity:0.5;
 }
 
 .nav__icon {
-  display:inline-block;
-  position: relative;
-  width:30px;
-  height:5px;
-  background-color: @nav-color;
-  transition-property: background-color, transform;
-  transition-duration: @duration;
-
-  &:before,
-  &:after {
-    content:'';
-    display:block;
-    width:30px;
-    height:5px;
-    position: absolute;
-    background: @nav-color;
-    transition-property: margin, transform;
-    transition-duration: @duration;
-    
-  }
-
-  &:before {
-    margin-top:-10px;
-  }
-
-  &:after {
-    margin-top:10px;
-  }
+	display:inline-block;
+	position: relative;
+	width:30px;
+	height:5px;
+	background-color: @nav-color;
+	transition-property: background-color, transform;
+	transition-duration: @duration;
+	
+	&:before,
+	&:after {
+		content:'';
+		display:block;
+		width:30px;
+		height:5px;
+		position: absolute;
+		background: @nav-color;
+		transition-property: margin, transform;
+		transition-duration: @duration;
+		
+	}
+	
+	&:before {
+		margin-top:-10px;
+	}
+	
+	&:after {
+		margin-top:10px;
+	}
 }
 
 /* Don't nest if you don't have to. */
-
-/**
-* Style #1
-*/
-
-.style-1 {
-
-  .nav {
-    transform: translateX(-100%);
-    width:100%;
-    height:100%;
-  }
-
-  .nav__link {
-    opacity:0;
-    transition-delay:500ms;
-  }
-
-  .nav--active .nav__link {
-    opacity:1;
-  }
-
-  .nav--active .nav {
-    transition: all @duration @ease;
-    transform: translateX(0);
-  }
-
-  .nav--active .nav__icon {
-    background: rgba(0,0,0,0.0);
- 
-    &:before {
-      margin-top:0;
-      transform:rotate(45deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(-45deg);
-    }
-  }
-
-}
-
-/**
-* Style #2
-*/
-
-.style-2 {
-
-   perspective:1000px;  
-
-  .nav {
-    width:100%;
-    height:100%;
-    transform: rotateY(180deg);    
-  }
-
-  .nav--active .nav {
-    transform: rotateY(360deg); 
-  }
-
-  .iphone__content {
-    transform: rotateY(0);
-    transform-style: preserve-3d;
-    transition: all @duration @ease;
-  }
-
-  .nav--active .iphone__content {
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-  }
-
-  .navi__icon {
-    background: rgba(0,0,0,0.0);
- 
-    &:before {
-      margin-top:0;
-      transform:rotate(90deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(180deg);
-    }
-  }
- 
-  .nav--active .nav__icon {
-    background: rgba(0,0,0,0.0);
-    transform:rotate(135deg); 
-    
-    &:before {
-      margin-top:0;
-      transform:rotate(90deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(180deg);
-    }
-   
-  }
-}
-
-/**
-* Style #3
-*/
-
-.style-3 {
-
-  .nav {
-    width:100%;
-    height:100%;
-    transform: translateX(100%);    
-  }
-
-  .nav--active .nav {
-    transform: translateX(20%);  
-  }
-
-  .iphone__content {
-    transform: scale(1) translateX(0);
-    transition: all @duration @ease;
-  }
-
-  .iphone__screen {
-    background-color: @nav-bg-active;
-  }
-
-  .nav--active .iphone__content {
-      transform: scale(0.9) translateX(-90%);
-  }
-
-  .nav__icon {
-    background: rgba(0,0,0,0.0);
- 
-    &:before {
-      margin-top:0;
-      transform:rotate(90deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(180deg);
-    }
-  }
-
-  .nav--active .nav__icon {
-    transform:rotate(135deg);
-  }
-
-}
-
-/**
-* Style #4
-*/
-
-.style-4 {
-
-  .nav {
-    width:100%;
-    height:100%;
-    transform: translateY(-100%);    
-  }
-
-  .nav--active .nav {
-    transform: translateY(0);  
-  }
-
-  .nav--active .nav__icon {    
-    transform:rotate(90deg);
-  }
-
-  .nav__link {
-    opacity:0;
-    transition-delay:500ms;
-  }
-
-  .nav--active .nav__link {
-    opacity:1;
-  }
-
-}
-
-/**
-* Style #5
-*/
-
-.style-5 {
-
-  .nav {
-    transform: translate(100%,-100%) scale(0.5);   
-    border-radius:100%; 
-  }
-
-  .nav--active .nav {
-    transform: translateY(0) scale(1); 
-    border-radius:0; 
-    width:100%;
-    height:100%;
-  }
-
-  .nav__link {
-    opacity:0;
-    transition-delay:500ms;
-  }
-
-  .nav--active .nav__link {
-    opacity:1;
-  }
-
-  .nav--active .nav__icon {
-    background: rgba(0,0,0,0.0);
- 
-    &:before {
-      margin-top:0;
-      transform:rotate(45deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(-45deg);
-    }
-  }
-
-}
 
 
 /**
@@ -1376,46 +1124,45 @@ li {
 */
 
 .style-6 {
-
-  .nav {
-    transform: rotateZ(-90deg);   
-    width:100%;
-    height:100%; 
-  }
-
-  .nav--active .nav {
-    transform: rotateZ(0);  
-  }
-
-  .nav__link {
-    opacity:0;
-    transition-delay:500ms;
-  }
-
-  .nav--active .nav__link {
-    opacity:1;
-  }
-
-  .nav__icon {
-    background: rgba(0,0,0,0.0);
- 
-    &:before {
-      margin-top:0;
-      transform:rotate(90deg);
-    }
-
-    &:after {
-      margin-top:0;
-      transform:rotate(180deg);
-    }
-  }
-
-  .nav--active .nav__icon {
-    transform:rotate(135deg);
-  }
-
+	
+	.nav {
+		transform: rotateZ(-90deg);
+		width:100%;
+		height:100%;
+	}
+	
+	.nav--active .nav {
+		transform: rotateZ(0);
+	}
+	
+	.nav__link {
+		opacity:0;
+		transition-delay:500ms;
+	}
+	
+	.nav--active .nav__link {
+		opacity:1;
+	}
+	
+	.nav__icon {
+		background: rgba(0,0,0,0.0);
+		
+		&:before {
+			margin-top:0;
+			transform:rotate(90deg);
+		}
+		
+		&:after {
+			margin-top:0;
+			transform:rotate(180deg);
+		}
+	}
+	
+	.nav--active .nav__icon {
+		transform:rotate(135deg);
+	}
+	
 }
-
 
 // modal
 .modal-dialog {
@@ -1425,8 +1172,6 @@ li {
 
 .modal-content {
 	background-color: @secondary_color;
-
-
 	
 	background-image: url("https://william-hartman.nl/CIRCLES.png");
 	background-repeat: no-repeat;
