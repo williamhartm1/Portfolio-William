@@ -10,11 +10,7 @@
 
 <div class="container-fluid no-padding">
 
-    <div class="iphone style-6">
-        <div class="iphone__item">#6</div>
-        <div class="iphone__power-btn"></div>
-        <div class="iphone__left-btn"></div>
-        <div class="iphone__details"></div>
+    <div class="style-6">
         <div class="iphone__screen">
             <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
             <nav class="nav">
@@ -28,7 +24,6 @@
             </nav>
             <div class="iphone__content"></div>
         </div>
-        <div class="iphone__home-btn"></div>
     </div>
     
     <script>
