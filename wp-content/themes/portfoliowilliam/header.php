@@ -10,7 +10,7 @@
 
 <div class="container-fluid no-padding">
 
-    <div class="iphone style-6">
+    <!-- <div class="iphone style-6">
         <div class="iphone__item">#6</div>
         <div class="iphone__power-btn"></div>
         <div class="iphone__left-btn"></div>
@@ -36,4 +36,10 @@
             e.preventDefault();
             $(this).parent().toggleClass('nav--active');
         });
-    </script>
+    </script> -->
+
+<div class="bg-ani">
+  <div class="outerCircle"></div>
+  <div class="innerCircle"></div>
+  <div class="icon"></div>
+</div>

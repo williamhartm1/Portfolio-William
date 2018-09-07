@@ -1,71 +1,7 @@
 /*--- font import ---*/
+@import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,800";
 @import "bootstrap.min.css";
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Dosis ExtraLight'), local('Dosis-ExtraLight'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGnKuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHDKeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_A.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Dosis Medium'), local('Dosis-Medium'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGbKOCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzG3L-CFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHTLuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHPLeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBQ.ttf) format('truetype');
-}
 /* fonts */
 /* colors */
 * {
@@ -101,10 +37,108 @@ body {
   /* Increase/decrease this value for cross-browser compatibility */
   box-sizing: content-box;
   /* So the width will be 100% + 17px */
-  background-image: url("https://william-hartman.nl/CIRCLES.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: auto 65%;
+}
+.icon {
+  background: url('images/hive.png') 0 0 no-repeat;
+  width: 76px;
+  height: 76px;
+  top: -200px;
+  margin: 0 auto;
+  position: absolute;
+}
+.icon:hover {
+  -moz-animation: rotatecircle 4s infinite linear;
+  -webkit-animation: rotatecircle 4s linear;
+}
+.outerCircle {
+  background-color: transparent;
+  border: 8px solid rgba(97, 82, 72, 0.9);
+  opacity: .9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 100px;
+  width: 103px;
+  height: 103px;
+  margin: 0 auto;
+  -moz-animation: spinPulse 5s infinite ease-in-out;
+  -webkit-animation: spinPulse 5s infinite ease-in-out;
+}
+.innerCircle {
+  background-color: transparent;
+  border: 5px solid rgba(189, 215, 60, 0.6);
+  opacity: .9;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: 100px;
+  top: -110px;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto;
+  position: relative;
+  -moz-animation: spinoffPulse 3s infinite linear;
+  -webkit-animation: spinoffPulse 3s infinite linear;
+}
+@-moz-keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spinoffPulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotatecircle {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotatecircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
 }
 /*--- footer ---*/
 footer {
@@ -785,13 +819,13 @@ li {
   width: 100%;
   height: 100%;
 }
-@media (min-aspect-ratio: 1.77777778) {
+@media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
     height: 300%;
     top: -100%;
   }
 }
-@media (max-aspect-ratio: 1.77777778) {
+@media (max-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
     width: 300%;
     left: -100%;
@@ -1018,4 +1052,4 @@ li {
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=./style.css.map */
