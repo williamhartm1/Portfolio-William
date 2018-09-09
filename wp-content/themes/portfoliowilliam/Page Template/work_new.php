@@ -27,29 +27,32 @@
 					global $post;
 					$args = array(
 						'category_name'  => 'work',
-						'order'          => 'ASC',
-						'posts_per_page' => -1,
+						'order'          => 'name',
+						'orderby'        => 'rand',
+						'posts_per_page' => '-1',
 					);
-					$temp_postslist = get_posts($args);
-					$postslist = [];
+					$postslist = get_posts($args);
 					
-					for($i = 0; $i <= count($temp_postslist); $i++) {
-						$post = $temp_postslist[$i];
-						setup_postdata($post);
-						if(!has_post_thumbnail() || !get_the_post_thumbnail()) {
-							unset($temp_postslist[$i]);
-						}
-						wp_reset_postdata();
-					}
-					shuffle($temp_postslist);
-					$postslist = $temp_postslist;
-					
-					//TODO: sometimes there is only one post in the first row
+					//$temp_postslist = get_posts($args);
+					//$postslist = [];
+					//
+					//for($i = 0; $i <= count($temp_postslist); $i++) {
+					//    $post = $temp_postslist[$i];
+					//    setup_postdata($post);
+					//    if(!has_post_thumbnail() || !get_the_post_thumbnail()) {
+					//        unset($temp_postslist[$i]);
+					//    }
+					//    wp_reset_postdata();
+					//}
+					//shuffle($temp_postslist);
+					//$postslist = $temp_postslist;
+					//
+					////TODO: sometimes there is only one post in the first row
 					
 					for($i = 0; $i <= count($postslist); $i++):
 						$post = $postslist[$i];
 						setup_postdata($post);
-
+						
 						if(has_post_thumbnail() && get_the_post_thumbnail()): ?>
                             <div class="col-12 col-sm-3 no-padding">
                                 <div class="align-self-center">
