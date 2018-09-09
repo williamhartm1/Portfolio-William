@@ -53,10 +53,14 @@
 						$post = $postslist[$i];
 						setup_postdata($post);
 						
-						if(has_post_thumbnail() && get_the_post_thumbnail()): ?>
+						if(has_post_thumbnail() && get_the_post_thumbnail()):
+							?>
                             <div class="col-12 col-sm-3 no-padding">
                                 <div class="align-self-center">
                                     <div class="project-img">
+                                        <!--TODO: modal van de <a> maken
+											 TODO: get post url_to_postid(get_post_permalink());
+										 -->
                                         <a href="<?= get_post_permalink(); ?>">
                                             <img src="<?= the_post_thumbnail_url(); ?>" alt="work image">
                                         </a>
