@@ -38,8 +38,8 @@
         });
     </script> -->
 
-<div class="bg-ani">
+<!-- <div class="bg-ani">
   <div class="outerCircle"></div>
   <div class="innerCircle"></div>
   <div class="icon"></div>
-</div>
+</div> -->
