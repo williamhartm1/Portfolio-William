@@ -1,6 +1,6 @@
 
 <!-- Modal -->
-<div class="modal-contact fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="row modal-dialog m-auto" role="document">
 		<div class="col-12 col-sm-8 m-auto modal-content">
 			<!-- <div class="modal-header">
