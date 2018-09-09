@@ -1,7 +1,7 @@
 
 <!-- Modal -->
 <div class="modal-contact fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="row modal-dialog m-auto" role="document">
+	<div class="row modal-dialog m-auto" role="document" style="z-index: 99999999">
 		<div class="col-12 col-sm-8 m-auto modal-content">
 			<!-- <div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
