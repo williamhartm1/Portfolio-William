@@ -947,14 +947,14 @@ li {
 	height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: ~'16/9') {
 	.fullscreen-bg__video {
 		height: 300%;
 		top: -100%;
 	}
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: ~'16/9') {
 	.fullscreen-bg__video {
 		width: 300%;
 		left: -100%;
@@ -1012,119 +1012,6 @@ li {
 @duration: 300ms;
 @ease: ease-in-out;
 
-.iphone {
-	width: 16.06em;
-	height: 30.6em;
-	border-radius: 1.875em;
-	margin: 2em;
-	position: relative;
-	display:inline-block;
-	background: #fff;
-}
-
-.iphone__item {
-	width: 16.06em;
-	height:1em;
-	position: absolute;
-	bottom:-2em;
-	color: darken(@main-bg, 10%);
-	text-align: center;
-}
-
-.iphone__power-btn{
-	width: 2.188em;
-	height: .188em;
-	background: #e0e0e0;
-	position: absolute;
-	right: 2.5em;
-	top: -.188em;
-}
-
-.iphone__left-btn {
-	width: .188em;
-	height: 1.250em;
-	top: 3.250em;
-	left: -.188em;
-	position: absolute;
-	background: #e0e0e0;
-	
-	&:before {
-		content: '';
-		width: .188em;
-		height: .875em;
-		position: absolute;
-		top: 3em;
-		background: #e0e0e0;
-	}
-	
-	&:after {
-		content: '';
-		width: .188em;
-		height: .875em;
-		position: absolute;
-		top: 5.5em;
-		background: #e0e0e0;
-	}
-}
-
-.iphone__details {
-	width: .438em;
-	height: .438em;
-	border-radius: 100%;
-	position: relative;
-	top: 1.313em;
-	left: 8em;
-	background: #7c7c7c;
-	
-	&:before {
-		content: '';
-		width: 2.5em;
-		height: .25em;
-		border-radius: .25em;
-		position: absolute;
-		top: 1em;
-		left: -1em;
-		background: #7c7c7c;
-	}
-}
-
-.iphone__home-btn {
-	width: 2.25em;
-	height: 2.25em;
-	border-radius: 100%;
-	position: absolute;
-	bottom: 1em;
-	right: 6.75em;
-	background: #f7f7f7;
-	
-	&:before {
-		content: '';
-		width: .813em;
-		height: .813em;
-		border: .15em solid #a8a8a8;
-		border-radius: .2em;
-		position: absolute;
-		top: .6em;
-		left: .57em;
-	}
-}
-
-.iphone__screen {
-	width: 14.5em;
-	height: 22.938em;
-	position: absolute;
-	top: 3.75em;
-	left: .750em;
-	overflow: hidden;
-}
-
-.iphone__content {
-	position: relative;
-	background-color: @screen-bg;
-	width:100%;
-	height:100%;
-}
-
 /**
 * Navigation Defaults
 */
@@ -1163,6 +1050,7 @@ li {
 
 /* Default navigation icon */
 .nav__trigger {
+	background: red;
 	display:block;
 	position:absolute;
 	width:30px;
@@ -1215,6 +1103,12 @@ li {
 */
 
 .style-6 {
+	width: 14.5em;
+	height: 22.938em;
+	//position: absolute;
+	//top: 3.75em;
+	//left: .750em;
+	overflow: hidden;
 	
 	.nav {
 		transform: rotateZ(-90deg);
@@ -1236,7 +1130,7 @@ li {
 	}
 	
 	.nav__icon {
-		background: rgba(0,0,0,0.0);
+		background: red;
 		
 		&:before {
 			margin-top:0;
