@@ -401,10 +401,10 @@ a {
 	border-color: @white;
 }
 
-.show {
-	opacity: 1;
-	background-color: @secondary_color;
-	font-size: 30px;
+// .show {
+// 	opacity: 1;
+// 	background-color: @secondary_color;
+// 	font-size: 30px;
 	// .nav {
 	// 	.li {
 	// 		a {
@@ -415,11 +415,12 @@ a {
 	// .nav-link {
 	// 	font-size: 30px !important;
 	// }
-}
+// }
 
 .main-menu {
 	height: @footer_height !important;
-	background: @secondary_color !important;
+	background-color: @secondary_color ;
+	margin: auto;
 
 	// opacity: 0.4;
 	// &:hover {
@@ -450,6 +451,10 @@ a {
 			text-shadow: 2px 2px 2px @secondary_color;
 		}
 	}
+}
+
+.navbar-expand-md {
+	background-color: @secondary_color !important;
 }
 
 nav {
@@ -541,13 +546,20 @@ ul.sub-menu {
 
 // Back button (single.php)
 .btn.back-btn {
-	color: @secondary_color;
+	color: @white;
+	font-size: 20px;
 	&:hover {
 		-webkit-transition: all 750ms;
 		-moz-transition: all 750ms;
 		-o-transition: all 750ms;
 		transition: all 750ms;
 		color: @white;
+	}
+}
+
+.workpage-img {
+	p {
+		text-align: center;
 	}
 }
 

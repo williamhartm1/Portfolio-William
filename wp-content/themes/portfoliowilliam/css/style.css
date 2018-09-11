@@ -394,14 +394,10 @@ a:focus {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
-.show {
-  opacity: 1;
-  background-color: #2b2b2b;
-  font-size: 30px;
-}
 .main-menu {
   height: 100px !important;
-  background: #2b2b2b !important;
+  background-color: #2b2b2b;
+  margin: auto;
 }
 .main-menu .navbar-brand {
   padding: 0;
@@ -425,6 +421,9 @@ a:focus {
   margin-right: .9rem !important;
   margin-top: 0 !important;
   text-shadow: 2px 2px 2px #2b2b2b;
+}
+.navbar-expand-md {
+  background-color: #2b2b2b !important;
 }
 nav li a {
   font-family: "Raleway", sans-serif;
@@ -502,7 +501,8 @@ ul.sub-menu {
   background-color: transparent !important;
 }
 .btn.back-btn {
-  color: #2b2b2b;
+  color: #FFFFFF;
+  font-size: 20px;
 }
 .btn.back-btn:hover {
   -webkit-transition: all 750ms;
@@ -510,6 +510,9 @@ ul.sub-menu {
   -o-transition: all 750ms;
   transition: all 750ms;
   color: #FFFFFF;
+}
+.workpage-img p {
+  text-align: center;
 }
 /*--- homepage ---*/
 .caption {
