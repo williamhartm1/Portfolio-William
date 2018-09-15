@@ -12,6 +12,9 @@
     margin-bottom: 5px;
     max-width: 75%;
   }
+  a .active {
+    border-top: 7px solid #92fd91;
+  }
 }
 @media (min-width: 768px) {
   .main-menu {
@@ -46,10 +49,13 @@
     height: 60px !important;
   }
   h1 {
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
   .sub-title {
     font-size: 30px !important;
+  }
+  .workpage-top {
+    margin-top: 15px;
   }
 }
 @media (max-width: 767.5px) {
@@ -82,6 +88,14 @@
     float: none;
   }
 }
+@media (max-width: 580px) {
+  #logoHead {
+    max-width: 180px !important;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+}
 @media (max-width: 440px) {
   #logoHead {
     max-width: 300px !important;
@@ -90,10 +104,22 @@
     max-width: 200px;
     height: auto;
   }
+  .btn.back-btn {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  .workpage-title {
+    font-size: 30px !important;
+  }
 }
-@media (max-width: 580px) {
+@media (max-width: 320px) {
   #logoHead {
     max-width: 180px !important;
+  }
+  .workpage-title {
+    font-size: 30px !important;
   }
 }
 /*# sourceMappingURL=./responsive.css.map */

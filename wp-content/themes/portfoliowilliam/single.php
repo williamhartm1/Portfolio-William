@@ -5,12 +5,12 @@
     <!--    PROJECT   -->
     <div class="container">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="row">
-                <div class="col-10">
-                    <h1><?php the_title(); ?></h1>
+            <div class="row workpage-top">
+                <div class="col-9">
+                    <h1 class="workpage-title"><?php the_title(); ?></h1>
                 </div>
-                <div class="col-2">
-                    <div class="btn back-btn mt-4" onclick="goBack()">Ga terug</div>
+                <div class="col-3">
+                    <div class="btn back-btn" onclick="goBack()">Ga terug</div>
                     <script>
                         function goBack() {
                             window.history.back();
