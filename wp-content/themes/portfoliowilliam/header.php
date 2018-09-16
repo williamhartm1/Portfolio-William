@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="container-fluid no-padding">
+<div class="container-fluid no-padding background">
 
     <!-- <div class="style-6">
         <div class="iphone__screen">
