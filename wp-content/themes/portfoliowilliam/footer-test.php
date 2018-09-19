@@ -1,30 +1,6 @@
 </div>
 <?php include 'contact.php'; ?>
 
-<!--    <div class="style-6">-->
-<!--        <div class="iphone__screen">-->
-<!--            <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>-->
-<!--            <nav class="nav">-->
-<!--                <ul class="nav__list">-->
-<!--                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>-->
-<!--                    <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>-->
-<!--                    <li class="nav__item"><a class="nav__link" href="#">Portfolio</a></li>-->
-<!--                    <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>-->
-<!--                    <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--            <div class="iphone__content"></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--    <script>-->
-<!--        $('.nav__trigger').on('click', function (e) {-->
-<!--            e.preventDefault();-->
-<!--            $(this).parent().toggleClass('nav--active');-->
-<!--        });-->
-<!--    </script>-->
-
-
 <footer class="lg-sticky row main-menu d-none d-md-block">
     <div class="container">
         <nav class="navbar navbar-expand-md fixed-bottom">
@@ -57,13 +33,32 @@
     </div>
 </footer>
 
-<footer class="sticky row d-xs-block d-sm-block d-md-none">
+<footer class="sticky row mobile-menu d-xs-block d-sm-block d-md-none">
     <div class="container">
-        <nav class="navbar fixed-bottom">
-            <!--KEERL-->
-        </nav>
+        <div class="custom-mobile-menu">
+            <div>
+                <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+                <div class="nav-mobile">
+                    
+                    <?php
+                    wp_nav_menu([
+                        'container'  => false,
+                        'menu_class' => 'nav__list',
+                        'depth'      => 2,
+                        'walker'     => new mobile_nav_walker(),
+                    ])
+                    ?>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
+<script>
+    $('.nav__trigger').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('nav--active');
+    });
+</script>
 
 <?php wp_footer(); ?>
 

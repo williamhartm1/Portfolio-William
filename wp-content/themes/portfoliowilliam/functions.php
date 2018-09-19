@@ -62,6 +62,8 @@ add_action('wp_enqueue_scripts', 'theme_register_css');
 // file exists... require it.
 require_once('bs4navwalker.php');
 
+// navwalker for mobile menu
+require_once('mobile_nav_walker.php');
 
 //register menu's
 function set_menu_areas()
