@@ -10,7 +10,7 @@
                     <h1 class="workpage-title"><?php the_title(); ?></h1>
                 </div>
                 <div class="col-3">
-                    <div class="btn back-btn" onclick="goBack()">Ga terug</div>
+                    <div class="btn back-btn workpage-top" onclick="goBack()">Ga terug</div>
                     <script>
                         function goBack() {
                             window.history.back();
