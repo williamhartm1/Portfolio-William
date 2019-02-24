@@ -9,7 +9,7 @@
 <?php include 'contact.php';?>
 
 <footer class="lg-sticky row main-menu">
-    <div class="container">
+    <div class="container container-footer">
         <nav class="navbar navbar-expand-md fixed-bottom">
             <!-- <a class="navbar-brand" href="<? //php echo home_url(); ?>">
                 <img class="logo-img" src="<? //= get_template_directory_uri() . '/images/LOGO-POM-WIT.png'; ?>"
