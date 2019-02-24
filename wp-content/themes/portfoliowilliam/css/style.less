@@ -44,6 +44,7 @@ body {
     color: @text_color;
     text-decoration: none;
     background-color: @bg_color;
+    margin-bottom: @footer_height;
     
     // no scrollbar
     width: 100%;
@@ -146,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 6vw;
     font-weight: 800;
     text-decoration: none;
+    padding-left: 25px;
     a {
         font-family: @title_font;
     }
@@ -425,7 +427,7 @@ ul.sub-menu {
     color: @white;
     margin-left: 5px;
     margin-bottom: 5px;
-    font-size: 1vw;
+    font-size: 1rem;
     float: right;
     border-radius: 0px !important;
     &:hover {
@@ -450,7 +452,7 @@ ul.sub-menu {
 
 // Back button (single.php)
 .btn.back-btn {
-    color: @secondary_color;
+    color: @white;
     &:hover {
         -webkit-transition: all 750ms;
         -moz-transition: all 750ms;
@@ -537,7 +539,7 @@ img {
 .posts {
     p {
         font-size: 1.2rem;
-        line-height: 1.3rem;
+        line-height: 1.9rem;
         padding: 5px 0;
     }
 }
@@ -626,6 +628,7 @@ img {
     background-color: @secondary_color;
     img {
         max-width: 100%;
+        padding-left: 10px;
         // scale/zoom
         -moz-transform: scale(2);
         -webkit-transform: scale(2);

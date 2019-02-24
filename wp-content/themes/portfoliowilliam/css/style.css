@@ -1,71 +1,7 @@
 /*--- font import ---*/
+@import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,500,800";
 @import "bootstrap.min.css";
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Dosis ExtraLight'), local('Dosis-ExtraLight'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGnKuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHDKeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_A.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Dosis Medium'), local('Dosis-Medium'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzGbKOCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzG3L-CFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHTLuCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzHPLeCFMI4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBQ.ttf) format('truetype');
-}
 /* fonts */
 /* colors */
 * {
@@ -88,12 +24,12 @@ html {
   overflow: hidden;
 }
 body {
-  margin-bottom: 60px;
   /* Margin bottom by footer height */
   font-family: "Dosis", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
   background-color: #2b2b2b;
+  margin-bottom: 60px;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -184,6 +120,7 @@ h6 {
   font-size: 6vw;
   font-weight: 800;
   text-decoration: none;
+  padding-left: 25px;
 }
 h1 a,
 h2 a,
@@ -430,7 +367,7 @@ ul.sub-menu {
   color: #FFFFFF;
   margin-left: 5px;
   margin-bottom: 5px;
-  font-size: 1vw;
+  font-size: 1rem;
   float: right;
   border-radius: 0px !important;
 }
@@ -452,7 +389,7 @@ ul.sub-menu {
   background-color: transparent !important;
 }
 .btn.back-btn {
-  color: #2b2b2b;
+  color: #FFFFFF;
 }
 .btn.back-btn:hover {
   -webkit-transition: all 750ms;
@@ -523,7 +460,7 @@ img {
 }
 .posts p {
   font-size: 1.2rem;
-  line-height: 1.3rem;
+  line-height: 1.9rem;
   padding: 5px 0;
 }
 .post {
@@ -593,6 +530,7 @@ img {
 }
 .project-img img {
   max-width: 100%;
+  padding-left: 10px;
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
   transform: scale(2);
@@ -922,4 +860,4 @@ li {
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=./style.css.map */
