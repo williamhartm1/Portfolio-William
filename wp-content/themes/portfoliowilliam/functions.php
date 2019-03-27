@@ -84,95 +84,47 @@ register_sidebar(array(
     'after_title'   => '</h2>',
 ));
 
-//sidebar hw-1
+/* TEXT-BLOCK HOMEPAGE START */
+// Left side
 register_sidebar(array(
-    'id'            => 'hw-1',
-    'name'          => 'Home pagina Widget 1 (links)',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-left-r1',
+    'name'          => 'Text-Block Home Left R1',
 ));
 
-//sidebar hw-2
 register_sidebar(array(
-    'id'            => 'hw-2',
-    'name'          => 'Home pagina Widget 2 (rechts)',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-left-r2',
+    'name'          => 'Text-Block Home Left R2',
 ));
 
-//sidebar hw-3
 register_sidebar(array(
-    'id'            => 'hw-3',
-    'name'          => 'Widget 3 ( )',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-left-r3',
+    'name'          => 'Text-Block Home Left R3',
 ));
 
-//sidebar hw-4
 register_sidebar(array(
-    'id'            => 'hw-4',
-    'name'          => 'Widget 4 ( )',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-left-r4',
+    'name'          => 'Text-Block Home Left R4',
 ));
 
-
-//sidebar project-1
+// Right side
 register_sidebar(array(
-    'id'            => 'project-1',
-    'name'          => 'Project Widget 1',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-right-r1',
+    'name'          => 'Text-Block Home Right R1',
 ));
 
-//sidebar project-2
 register_sidebar(array(
-    'id'            => 'project-2',
-    'name'          => 'Project Widget 2',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-right-r2',
+    'name'          => 'Text-Block Home Right R2',
 ));
 
-//sidebar project-3
 register_sidebar(array(
-    'id'            => 'project-3',
-    'name'          => 'Project Widget 3',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-right-r3',
+    'name'          => 'Text-Block Home Right R3',
 ));
 
-//sidebar project-4
 register_sidebar(array(
-    'id'            => 'project-4',
-    'name'          => 'Project Widget 4',
-    'before_widget' => '<div class="home-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
-));
-
-//sidebar Footer widget
-register_sidebar(array(
-    'id'            => 'fw-1',
-    'name'          => 'Footer Widget',
-    'before_widget' => '<div class="footer-widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2>',
-    'after_title'   => '</h2>',
+    'id'            => 'txt-block-right-r4',
+    'name'          => 'Text-Block Home Right R4',
 ));
 
 //custom excerpt length

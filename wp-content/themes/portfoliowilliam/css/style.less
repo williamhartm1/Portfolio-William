@@ -597,9 +597,27 @@ img {
     }
 }
 
-// ul-list
+// skills divs
 .rating {
-    padding: 10px;
+	float: left;
+	width: 100%;
+	.rating-text {
+		float: left;
+	}
+	.rating-fa {
+		float: right;
+		// padding: 10px;
+	}
+}
+
+.fa-square {
+	color: @primary_color;
+	margin-left: 20px;
+	font-size: 22px !important;
+	box-shadow: 2px 2px 5px @secondary_color;
+	&:first-child {
+		margin-left: 5px;
+	}
 }
 
 /*--- projecten [in post] ---*/
@@ -623,12 +641,11 @@ img {
 .project-img {
     position: relative;
     overflow: hidden;
-    // margin-bottom: 30px;
     border: 1px solid @primary_color;
     background-color: @secondary_color;
     img {
         max-width: 100%;
-        padding-left: 10px;
+        padding-left: 12px;
         // scale/zoom
         -moz-transform: scale(2);
         -webkit-transform: scale(2);
@@ -1067,4 +1084,41 @@ li {
 
 .blur {
     -webkit-filter: blur(5px) grayscale(50%);
+}
+
+/* FRONTPAGE */
+.container-fp {
+    min-height: 100%;
+    background-image: url("../images/commercieel-denkvermogen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    resize: both;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    // overflow: auto;
+    h2 {
+        color: @primary_color;
+        text-transform: uppercase;
+        padding-left: 0;
+        letter-spacing: 0.2rem;
+        span {
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: @white;
+        }
+    }
+    .text-block {
+        float: right;
+    }
+    .text-block-left {
+        text-align: right;
+        float: left;
+    }
+    .text-block-right {
+        text-align: left;
+        float: left;
+    }
 }

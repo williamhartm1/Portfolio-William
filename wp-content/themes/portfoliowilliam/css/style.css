@@ -508,7 +508,23 @@ img {
   transform: scale(1.1);
 }
 .rating {
-  padding: 10px;
+  float: left;
+  width: 100%;
+}
+.rating .rating-text {
+  float: left;
+}
+.rating .rating-fa {
+  float: right;
+}
+.fa-square {
+  color: #92fd91;
+  margin-left: 20px;
+  font-size: 22px !important;
+  box-shadow: 2px 2px 5px #2b2b2b;
+}
+.fa-square:first-child {
+  margin-left: 5px;
 }
 /*--- projecten [in post] ---*/
 .projecten-row:last-of-type {
@@ -530,7 +546,7 @@ img {
 }
 .project-img img {
   max-width: 100%;
-  padding-left: 10px;
+  padding-left: 12px;
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
   transform: scale(2);
@@ -859,5 +875,39 @@ li {
 }
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
+}
+/* FRONTPAGE */
+.container-fp {
+  min-height: 100%;
+  background-image: url("../images/commercieel-denkvermogen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  resize: both;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.container-fp h2 {
+  color: #92fd91;
+  text-transform: uppercase;
+  padding-left: 0;
+  letter-spacing: 0.2rem;
+}
+.container-fp h2 span {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+.container-fp .text-block {
+  float: right;
+}
+.container-fp .text-block-left {
+  text-align: right;
+  float: left;
+}
+.container-fp .text-block-right {
+  text-align: left;
+  float: left;
 }
 /*# sourceMappingURL=./style.css.map */
