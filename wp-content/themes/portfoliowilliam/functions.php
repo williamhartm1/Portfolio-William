@@ -87,44 +87,14 @@ register_sidebar(array(
 /* TEXT-BLOCK HOMEPAGE START */
 // Left side
 register_sidebar(array(
-    'id'            => 'txt-block-left-r1',
-    'name'          => 'Text-Block Home Left R1',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-left-r2',
-    'name'          => 'Text-Block Home Left R2',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-left-r3',
-    'name'          => 'Text-Block Home Left R3',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-left-r4',
-    'name'          => 'Text-Block Home Left R4',
+    'id'            => 'txt-block-left',
+    'name'          => 'Text-Block Home Left',
 ));
 
 // Right side
 register_sidebar(array(
-    'id'            => 'txt-block-right-r1',
-    'name'          => 'Text-Block Home Right R1',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-right-r2',
-    'name'          => 'Text-Block Home Right R2',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-right-r3',
-    'name'          => 'Text-Block Home Right R3',
-));
-
-register_sidebar(array(
-    'id'            => 'txt-block-right-r4',
-    'name'          => 'Text-Block Home Right R4',
+    'id'            => 'txt-block-right',
+    'name'          => 'Text-Block Home Right',
 ));
 
 //custom excerpt length

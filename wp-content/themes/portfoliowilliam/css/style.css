@@ -899,7 +899,7 @@ li {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
 }
-.container-fp .text-block {
+.container-fp .text-blocks {
   float: right;
 }
 .container-fp .text-block-left {
