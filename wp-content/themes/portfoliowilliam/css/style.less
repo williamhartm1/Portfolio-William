@@ -38,13 +38,12 @@ html {
 }
 
 body {
-    margin-bottom: @footer_height; /* Margin bottom by footer height */
+    margin-bottom: @footer_height; /* Margin bottom by menu height */
     //height: 100%;
     font-family: @text_font;
     color: @text_color;
     text-decoration: none;
     background-color: @bg_color;
-    margin-bottom: @footer_height;
     
     // no scrollbar
     width: 100%;
@@ -1088,7 +1087,7 @@ li {
 
 /* FRONTPAGE */
 .container-fp {
-    min-height: 100%;
+    height: 100%;
     background-image: url("../images/commercieel-denkvermogen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1123,25 +1122,11 @@ li {
     }
 }
 
-
-
 //vertical align test
 .container {
     height: 100%;
 }
 
-.note {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    padding: 5px;
-    background: #eee;
-    max-width: 360px;
-    border: 1px dotted #bbb;
-}
-
-/* show border around full height container */
-.h-100 {
-    border: 1px dotted #cc2222;
+.container-fluid {
+    height: 100%;
 }
