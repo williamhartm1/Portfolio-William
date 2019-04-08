@@ -10,19 +10,19 @@
 				<i class="fas fa-bars hamburger_bars dropup"></i>
 			</button>
             <div class="collapse navbar-collapse mr-auto w-100 justify-content-end" id="navbarSupportedContent">
-			<?php /* Primary navigation */
+				<?php /* Primary navigation */
 				 wp_nav_menu([
-					            'menu'            => 'primary',
-					            'theme_location'  => 'bottom',
-					            'container'       => false,
-					            'container_id'    => 'navbarSupportedContent',
-					            'container_class' => 'collapse navbar-collapse',
-					            'menu_id'         => false,
-								'menu_class'      => 'navbar-nav main-nav',
-					            'depth'           => 2,
-					            'fallback_cb'     => 'bs4navwalker::fallback',
-					            'walker'          => new bs4navwalker(),
-				            ]);
+					'menu'            => 'primary',
+					'theme_location'  => 'bottom',
+					'container'       => false,
+					'container_id'    => 'navbarSupportedContent',
+					'container_class' => 'collapse navbar-collapse',
+					'menu_id'         => false,
+					'menu_class'      => 'navbar-nav main-nav',
+					'depth'           => 2,
+					'fallback_cb'     => 'bs4navwalker::fallback',
+					'walker'          => new bs4navwalker(),
+					]);
 				?>
             </div>
         </nav>

@@ -66,7 +66,7 @@ footer {
     width: 100%;
     height: @footer_height; /* Set the fixed height of the footer here */
     line-height: 60px; /* Vertically center the text there */
-    // background-color: @primary_color;
+    background-color: @transparent;
     color: @white;
     font-family: @title_font;
     font-weight: 300;
@@ -328,20 +328,8 @@ a {
 
 .main-menu {
     background: transparent !important;
-    // background: -moz-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%); /* ff3.6+ */
-    // background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #282828), color-stop(50%, #282828), color-stop(51%, #6e9e63), color-stop(100%, #6e9e63)); /* safari4+,chrome */
-    // background: -webkit-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%); /* safari5.1+,chrome10+ */
-    // background: -o-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%); /* opera 11.10+ */
-    // background: -ms-linear-gradient(135deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%); /* ie10+ */
-    // background: linear-gradient(315deg, #6e9e63 0%, #6e9e63 50%, #282828 50%, #282828 100%); /* w3c */
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282828', endColorstr='#6e9e63', GradientType=1); /* ie6-9 */
-    .navbar-brand {
-        padding: 0;
-    }
-    .navbar-brand > img {
-        max-height: 95px;
-        padding-top: 5px;
-        width: auto;
+    .navbar-expand-md {
+        background: transparent;
     }
     .navbar-nav {
         margin: auto;
@@ -351,8 +339,6 @@ a {
             margin-top: 20px;
         }
         .nav-link {
-            // padding-left: 0;
-            // padding-right: 0;
             padding: 0;
             margin-left: .9rem !important;
             margin-right: .9rem !important;
@@ -1074,7 +1060,6 @@ li {
 
 .modal-content {
     background-color: @secondary_color;
-    
     background-image: url("https://william-hartman.nl/CIRCLES.png");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -1093,6 +1078,8 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
     resize: both;
+    // margin-left: -15px;
+    margin-right: -15px;
 
     // position: fixed; MOET UIT ANDERS WERKT VERTICAL ALIGN NIET
     left: 0;
@@ -1100,25 +1087,31 @@ li {
     // overflow: auto;
     h2 {
         color: @primary_color;
+        font-size: 3.8vw;
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
         padding-left: 0;
-        letter-spacing: 0.2rem;
         span {
             color: transparent;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: @white;
         }
     }
+    .container {
+        padding-right: 30px;
+    }
     .text-blocks {
-        float: right;
+        display: flex; 
+        justify-content: flex-end;
     }
     .text-block-left {
         text-align: right;
-        float: left;
+        display: flex;
+        justify-content: flex-end;
     }
     .text-block-right {
-        text-align: left;
-        float: left;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
