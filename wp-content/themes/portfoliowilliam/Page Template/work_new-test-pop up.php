@@ -24,12 +24,11 @@
                     </div>
 
                     <?php
-                    $post_counter = 1; // xxxxxxx
+                    $post_counter = 1;
                     $first_post = true;
                     global $post;
                     $args = array(
                         'category_name'  => 'work',
-                        //'order'          => 'name',
                         'orderby'        => 'rand',
                         'posts_per_page' => '-1',
                     );

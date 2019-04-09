@@ -630,7 +630,7 @@ img {
     background-color: @secondary_color;
     img {
         max-width: 100%;
-        padding-left: 12px;
+        // padding-left: 12px;
         // scale/zoom
         -moz-transform: scale(2);
         -webkit-transform: scale(2);
@@ -724,29 +724,6 @@ img {
     margin-bottom: 25px;
 }
 
-/* home widgets */
-.home-widget {
-    h2 {
-        font-family: @title_font;
-        margin-bottom: 15px;
-        font-weight: bold;
-    }
-    ul {
-        padding-bottom: 20px;
-    }
-    li {
-        list-style: none;
-        text-align: left;
-        &:before {
-            content: ' - ';
-        }
-    }
-    a {
-        text-decoration: none;
-        color: @white;
-    }
-}
-
 /* latest posts */
 .latest-post {
     padding: 20px;
@@ -754,81 +731,6 @@ img {
     .title {
         padding: 5px;
     }
-}
-
-/*--- NINJA FORM ---*/
-.ninja-forms-field {
-    border-color: @primary_color !important;
-    color: @primary_color;
-}
-
-.nf-form-cont {
-    margin-bottom: 30px;
-}
-
-.nf-field-element {
-    label {
-        &:before {
-            color: @primary_color !important;
-        }
-        &:after {
-            border-color: @primary_color !important;
-        }
-    }
-    
-    input, textarea {
-        border: solid @primary_color 1px;
-        border-radius: 10px;
-        padding-left: 10px;
-        font-family: @title_font;
-    }
-}
-
-.nf-form-content {
-    max-width: 100% !important;
-    input, select, textarea {
-        outline: none;
-        color: @primary_color !important;
-        font-size: 1.15em !important;
-    }
-    input[type="button"] {
-        padding: 4px 20px;
-        color: @secondary_color !important;
-        // background-color: @primary_color !important;
-        border-radius: 15px !important;
-        border-color: 1px @primary_color;
-        font-size: 1em !important;
-        font-family: @title_font !important;
-        font-weight: 300 !important;
-        &:hover {
-            -webkit-transition: all 750ms !important;
-            -moz-transition: all 750ms !important;
-            -o-transition: all 750ms !important;
-            transition: all 750ms !important;
-            background-color: @secondary_color !important;
-            cursor: pointer;
-            color: @white !important;
-            border: 1px solid @secondary_color !important;
-        }
-    }
-    select {
-        padding: 4px 20px;
-        color: @secondary_color !important;
-        border-radius: 15px !important;
-        border-color: 1px @primary_color;
-        font-size: 1em !important;
-        font-family: @title_font !important;
-        font-weight: 300 !important;
-    }
-}
-
-.nf-field-container {
-    margin-bottom: 10px !important;
-}
-
-.nf-field-label {
-    margin-bottom: 3px !important;
-    color: @primary_color !important;
 }
 
 // bullet list

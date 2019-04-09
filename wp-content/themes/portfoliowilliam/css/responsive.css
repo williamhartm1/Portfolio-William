@@ -6,6 +6,11 @@
     font-size: 6rem;
   }
 }
+@media (min-width: 1200px) {
+  .project-img img {
+    padding-left: 12px;
+  }
+}
 @media (min-width: 992px) {
   a.active {
     border-top: 7px solid #92fd91;
@@ -52,37 +57,6 @@
   .navbar-expand-md {
     background-color: transparent !important;
   }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
-    background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-  }
 }
 @media (max-width: 767.5px) {
   .main-menu {
@@ -93,135 +67,13 @@
     padding-left: .9rem !important;
     padding-right: .9rem !important;
   }
-  .main-menu .navbar-brand > img {
-    max-height: 100px;
-    padding: 15px 15px 15px 0px;
-  }
   .navbar-collapse {
-    background-color: #2b2b2b !important;
-  }
-  .dropdown-menu {
-    margin: .125rem 15px 0;
-    border-right: none;
-    border-left: none;
-    border-top: 1px solid rgba(146, 253, 145, 0.25);
-    border-bottom: none;
-    border-radius: 0;
-  }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
     background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
   }
 }
 @media (max-width: 600px) {
   .post .post-thumbnail {
     position: relative;
-  }
-  .site-header .top-search {
-    float: none;
-  }
-  header.site-header .top-search {
-    float: none;
-  }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
-    background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-  }
-}
-@media (max-width: 580px) {
-  body {
-    margin-bottom: 60px !important;
-  }
-  #logoHead {
-    max-width: 180px !important;
-  }
-  h1 {
-    font-size: 40px !important;
-  }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
-    background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
   }
 }
 @media (max-width: 576px) {
@@ -230,97 +82,11 @@
   }
 }
 @media (max-width: 440px) {
-  body {
-    margin-bottom: 60px !important;
-  }
-  #logoHead {
-    max-width: 300px !important;
-  }
-  .main-menu .navbar-brand > img {
-    max-width: 200px;
-    height: auto;
+  .workpage-title {
+    font-size: 30px !important;
   }
   .btn.back-btn {
     font-size: 15px;
-  }
-  h1 {
-    font-size: 40px !important;
-  }
-  .workpage-title {
-    font-size: 30px !important;
-  }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
-    background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-  }
-}
-@media (max-width: 320px) {
-  body {
-    margin-bottom: 60px !important;
-  }
-  #logoHead {
-    max-width: 180px !important;
-  }
-  .workpage-title {
-    font-size: 30px !important;
-  }
-  .project-img {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #92fd91;
-    background-color: #2b2b2b;
-  }
-  .project-img img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    -moz-transform: scale(1.8);
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    opacity: 0.6;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-  .project-img img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
   }
 }
 /*# sourceMappingURL=./responsive.css.map */

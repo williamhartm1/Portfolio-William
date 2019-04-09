@@ -44,7 +44,7 @@
 
 <?php else: ?>
     <!--    PROJECT   -->
-    <div class="container pb-4">
+    <div class="container mt-3 pb-4">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="row">
                 <div class="col-10">
@@ -60,26 +60,9 @@
                 </div>
             </div>
             <div class="row ">
-                <!--<div class="col-12 author">-->
-                <!--    In --><?php //the_category('&nbsp;/&nbsp;') ?><!-- door-->
-                <!--    <a href="--><?php //echo get_author_posts_url(get_the_author_meta('ID')) ?><!--">-->
-                <!--        --><?php //the_author() ?>
-                <!--    </a>-->
-                <!--    op --><?php //the_time('j F Y, G:i'); ?>
-                <!--</div>-->
-                <!--<div class="col-12">-->
-                <!--    --><?php //the_post_thumbnail('normal-thumbnail'); ?>
-                <!--</div>-->
-
                 <div class="col-12 ">
                     <p><?php the_content(); ?></p>
                 </div>
-
-                <?php if (has_tag()): ?>
-                    <div class="col-12">
-                        <?php the_tags('Tags: ', '&nbsp;/&nbsp;'); ?>
-                    </div>
-                <?php endif; ?>
             </div>
         <?php endwhile;
         else:
@@ -88,10 +71,5 @@
     </div>
 
 <?php endif; ?>
-
-<!-- <div class="container" style="margin-top: 15px;">
-	<?php //comments_template(); ?>
-</div> -->
-
 
 <?php get_footer(); ?>
